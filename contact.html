@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Kelompok 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">KELOMPOK-5</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="contact-container animate-fade-up">
+            <h1>Hubungi Kami</h1>
+            <p class="subtitle">Punya masukan? Jangan ragu buat kasih masukan kalian disini</p>
+            
+            <form action="#">
+                <div class="contact-text">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required placeholder="Nama kamu">
+                </div>
+                <div class="contact-text">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" required placeholder="email@kamu.com">
+                </div>
+                <div class="contact-text">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="5" required placeholder="Tulis pesanmu di sini..."></textarea>
+                </div>
+                <button type="submit" class="btn-kirim">Kirim Pesan</button>
+            </form>
+
+            <div class="social-media-links">
+                <p>Atau temukan kami di:</p>
+                <div class="icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/akizaja" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
