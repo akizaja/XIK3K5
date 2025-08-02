@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Kelompok 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">KELOMPOK-5</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="ripple">Home</a></li>
+                <li><a href="about.html" class="ripple">About</a></li>
+                <li><a href="#" class="ripple">Lorem</a></li>
+                <li><a href="#" class="ripple">Dolor</a></li>
+                <li><a href="dashboard.html" class="ripple">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-page">
+    
+        <section class="about-content animate-fade-up">
+            <h1 class="fade-delay delay-1">Materi PKL</h1>
+            <p>Kegiatan Praktik Kerja Lapangan (PKL) </p>
+            <p>Laporan ini menjelaskan materi yang di pelajari selama PKL</p>
+            <p>Seperti pembuatan website, penggunaan, framework, serta proses testing aplikasi.</p>
+        </section>
+    
+    </main>
+    <script>
+
+    document.querySelectorAll('.ripple').forEach(el => {
+        el.addEventListener('click', function (e) {
+            const circle = document.createElement('span');
+            circle.classList.add('ripple-effect');
+
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left - 50;
+            const y = e.clientY - rect.top - 50;
+
+            circle.style.left = `${x}px`;
+            circle.style.top = `${y}px`;
+
+            this.appendChild(circle);
+
+            setTimeout(() => {
+                circle.remove();
+            }, 600);
+        });
+    });
+    </script>
+
+</body>
+</html>
